@@ -53,5 +53,8 @@
     "uuid": "^9.0.1",
     "uuidv4": "^6.2.13",
     "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.2"
   }
 }

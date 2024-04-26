@@ -1,7 +1,5 @@
 'use strict';
-const {
-  Model
-} = require('sequelize');
+const { Model } = require('sequelize');
 
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
@@ -16,8 +14,10 @@ module.exports = (sequelize, DataTypes) => {
     password: DataTypes.STRING,
     id: {
       type: DataTypes.UUID,
-      primaryKey: true,  
+      defaultValue: DataTypes.UUIDV4,
+      primaryKey: true,
     },
+    
     image: DataTypes.STRING,
     gender: DataTypes.STRING,
     roleId: {

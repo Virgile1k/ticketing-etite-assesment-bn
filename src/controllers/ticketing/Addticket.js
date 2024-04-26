@@ -21,3 +21,5 @@ async function addTicket(req, res) {
     res.status(500).json({ error: "Failed to add ticket" });
   }
 }
+
+export default addTicket;
